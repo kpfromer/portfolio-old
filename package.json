@@ -4,6 +4,7 @@
   "description": "My portfolio website.",
   "main": "index.js",
   "scripts": {
+    "clean": "prettier --write \"./**/*.{ts,tsx,js,css,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,42 @@
   "bugs": {
     "url": "https://github.com/kpfromer/portfolio/issues"
   },
-  "homepage": "https://github.com/kpfromer/portfolio#readme"
+  "homepage": "https://github.com/kpfromer/portfolio#readme",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/boom": "^7.3.0",
+    "@types/convict": "^4.2.1",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/joi": "^14.3.3",
+    "@types/mongoose": "^5.5.16",
+    "@types/slug": "^0.9.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.3",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "convict": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-typescript": "^5.0.1",
+    "joi": "^14.3.1",
+    "mongoose": "^5.6.11",
+    "reflect-metadata": "^0.1.13",
+    "slug": "^1.1.0",
+    "typegoose": "^5.9.0"
+  }
 }
