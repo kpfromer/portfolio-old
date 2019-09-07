@@ -1,0 +1,20 @@
+.footerWrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  text-align: left;
+  background-color: #041230;
+  padding: 50px 0px;
+  box-sizing: border-box;
+}
+.footerWrap p {
+  color: #fff;
+}
+.footerWrap p a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  position: relative;
+}
