@@ -1,0 +1,169 @@
+.leftpartWrap {
+  width: 300px;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #041230;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.leftpartWrap.hide {
+  left: -300px;
+}
+.leftpartWrap.opened {
+  left: -300px;
+}
+.leftpartWrap .logoWrap {
+  background-color: #041230;
+  padding: 50px 20px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+/* Used since logoWrap is not being used */
+.leftpartTop {
+  margin-bottom: 50px;
+}
+.leftpartWrap .menuListWrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 0px 20px 0px 60px;
+  box-sizing: border-box;
+}
+.leftpartWrap .menuListWrap ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.leftpartWrap .menuListWrap ul li {
+  margin: 0px;
+}
+.leftpartWrap .menuListWrap ul li:last-child {
+  margin-bottom: 0px;
+}
+.leftpartWrap .menuListWrap ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 19px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.leftpartWrap .menuListWrap ul li a:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 0px;
+  background-color: #e3872d;
+  top: 14px;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+.leftpartWrap .menuListWrap ul li a:hover {
+  color: #e3872d;
+}
+.leftpartWrap .menuListWrap ul li a:hover:before {
+  width: 35px;
+}
+.leftpartWrap .leftpartBottom {
+  position: absolute;
+  left: 60px;
+  bottom: 38px;
+}
+.leftpartWrap .leftpartBottom .socialWrap {
+  width: 100%;
+  height: auto;
+  float: left;
+  position: relative;
+  left: -5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.leftpartWrap .leftpartBottom .socialWrap ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.leftpartWrap .leftpartBottom .socialWrap ul li {
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+}
+.leftpartWrap .leftpartBottom .socialWrap ul li:last-child {
+  margin-right: 0px;
+}
+.leftpartWrap .leftpartBottom .socialWrap ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.leftpartWrap .leftpartBottom .socialWrap ul li a:hover {
+  color: #e3872d;
+}
+.leftpartWrap .resize {
+  position: absolute;
+  right: 0px;
+  bottom: 20%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #e3872d;
+  display: inline-block;
+  text-decoration: none;
+  z-index: 200;
+
+  padding: 0;
+  border: none;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.leftpartWrap .resize.opened {
+  right: -30px;
+}
+.leftpartWrap .resize svg {
+  color: #fff;
+  transform: rotate(0deg);
+  /* position: absolute;
+	left: 6px; */
+  transition: all 0.3s ease;
+}
+.leftpartWrap .resize svg.opened {
+  transform: rotate(-180deg);
+}
+.leftpartInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rightpart {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-left: 300px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* From plugin.css TODO: find what .current does! */
+.anchorNav .current a {
+  transition: all 0.3s ease;
+}
