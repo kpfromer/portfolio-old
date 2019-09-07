@@ -1,0 +1,36 @@
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0px 40px;
+  position: relative;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.container.full {
+  max-width: 100%;
+}
+
+.singleWrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1040px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 10px;
+  }
+}
