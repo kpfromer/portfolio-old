@@ -7,17 +7,28 @@
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.8.5",
+    "axios": "^0.19.0",
     "clsx": "^1.0.4",
+    "github-markdown-css": "^3.0.1",
     "moment": "^2.24.0",
+    "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-icons": "^3.7.0",
+    "react-markdown": "^4.2.1",
+    "react-mde": "^7.6.2",
     "react-media": "^1.9.2",
     "react-plx": "^1.3.13",
     "react-router-dom": "^5.0.1",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.1.1",
     "react-spring": "^8.0.27",
+    "react-syntax-highlighter": "^11.0.2",
+    "react-toastify": "^5.3.2",
+    "react-typed": "^1.2.0",
+    "react-visibility-sensor": "^5.1.1",
+    "remark-breaks": "^1.0.3",
+    "showdown": "^1.9.0",
     "typed.js": "^2.0.10",
     "typescript": "3.5.3"
   },
@@ -25,7 +36,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:prod": "REACT_APP_API_URL=https://api.kylepfromer.com react-scripts build && mv build/index.html build/200.html"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,9 +54,15 @@
     ]
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/moment": "^2.13.0",
+    "@types/prettier": "^1.18.2",
     "@types/react-icons": "^3.0.0",
     "@types/react-router-dom": "^4.3.4",
+    "@types/react-syntax-highlighter": "^10.2.1",
+    "@types/react-toastify": "^4.0.2",
+    "@types/react-visibility-sensor": "^5.0.1",
+    "@types/showdown": "^1.9.3",
     "@types/typed.js": "^2.0.9"
   }
 }
