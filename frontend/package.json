@@ -28,7 +28,7 @@
     "react-typed": "^1.2.0",
     "react-visibility-sensor": "^5.1.1",
     "remark-breaks": "^1.0.3",
-    "showdown": "^1.9.0",
+    "showdown": "^1.9.1",
     "typed.js": "^2.0.10",
     "typescript": "3.5.3"
   },
